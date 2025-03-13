@@ -11,6 +11,7 @@
       type="text/css"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./styles/style.css">
   </head>
   <body class="ff-inter">
     <header class="w-11/12 mx-auto py-4 border-b-2 border-[#171717]/20">
@@ -31,10 +32,10 @@
           id="category-container"
           class="flex justify-center items-center gap-5 py-5"
         >
-          <button class="btn text-white bg-[#ff1f3d]">All</button>
+          <button onclick="loadVideos()" class="btn ">All</button>
         </nav>
       </section>
-      <section class="" id="video_container"></section>
+      <section class="grid grid-cols-4 gap-4 w-11/12 mx-auto" id="video_container"></section>
     </main>
     <script src="./scripts/script.js"></script>
   </body>
